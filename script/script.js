@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // People section
     link_people.addEventListener("click", function () {
-        showPeople()
+        showPeople(1)
+        // Nav arrows
     })
 
     // Planets section
@@ -91,15 +92,15 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
-    function showPeople() {
+    function showPeople(page) {
         desc_homepage_container.remove()
         content_container.innerHTML = ""
         // Fetching every characters
-        fetch ("https://swapi.dev/api/people")
+        fetch (`https://swapi.dev/api/people/?page=${page}`)
         .then((resp) => resp.json())
         .then(function(data) {
+            let next = data.next
             let people = data.results
-            let person_image = "https://via.placeholder.com/300"
             people.forEach(person => {
                 fetch(person.homeworld)
                 .then((resp) => resp.json())
@@ -107,31 +108,39 @@ document.addEventListener("DOMContentLoaded", function () {
                     // Defining icon according to the character
                     switch (person.name) {
                         case "Luke Skywalker":
-                            person_image = "media/luke_skywalker_icon.jpg"
+                            person_image = "media/characters_icon/luke_skywalker_icon.jpg"
                             break
                         case "C-3PO":
+                            person_image = "media/characters_icon/c3po_icon.webp"
                             break
                         case "R2-D2":
-                            person_image = "media/r2d2_icon.jpg"
+                            person_image = "media/characters_icon/r2d2_icon.jpg"
                             break
                         case "Darth Vader":
-                            person_image = "media/darth_vader_icon.jpg"
+                            person_image = "media/characters_icon/darth_vader_icon.jpg"
                             break
                         case "Leia Organa":
+                            person_image = "media/characters_icon/leia_organa_icon.jpg"
                             break
                         case "Owen Lars":
+                            person_image = "media/characters_icon/owen_lars_icon.webp"
                             break
                         case "Beru Whitesun lars":
+                            person_image = "media/characters_icon/beru_whitesun_lars_icon.jpg"
                             break
                         case "R5-D4":
+                            person_image = "media/characters_icon/r5d4_icon.jpg"
                             break
                         case "Biggs Darklighter":
+                            person_image = "media/characters_icon/biggs_darklighter_icon.webp"
                             break
-                        case "Obi-wan Kenobi":
+                        case "Obi-Wan Kenobi":
+                            person_image = "media/characters_icon/obiwan_kenobi_icon.jpg"
+                            break
+                        default:
+                            person_image = "https://via.placeholder.com/300"
                             break
                     }
-
-
                     homeworld = planet.name
                     content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
                     <img class="card-img-top" src="${person_image}" alt="Card image cap">
@@ -148,6 +157,9 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log(error)
                 })
             })
+
+            // Creating previous and next buttons
+            
         })
         .catch(function(error) {
             console.log(error)
