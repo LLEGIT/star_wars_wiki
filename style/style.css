@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("./../media/background_page.jpg");
+}
+
+/* Classes */
+
+.desc-homepage {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.desc-homepage-container {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+/* IDs */
+
+#h1-homepage {
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+
+#wiki-logo {
+    width: 75px;
+    height: auto;
+}
