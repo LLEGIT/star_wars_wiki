@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", showPeople(1))
+let page = 1
+
+document.addEventListener("DOMContentLoaded", showPeople(page))
 
 function showPeople(page) {
+    let page_nb = document.querySelector("#page-nb")
+    page_nb.textContent = `Page ${page}`
     let content_container = document.querySelector(".content-container")
     content_container.innerHTML = ""
-    let index = 0
     // Fetching every characters
     fetch(`https://swapi.dev/api/people/?page=${page}`)
     .then((resp) => resp.json())
     .then(function (data) {
-        let next = data.next
         let people = data.results
         people.forEach(person => {
             fetch(person.homeworld)
@@ -61,7 +63,6 @@ function showPeople(page) {
                 <p class='card-text'>Gender: ${person.gender}</p>
                 <p class='card-text'>Birth year: ${person.birth_year}</p>
                 </div></div></div>`
-                index++
             })
             .catch(function (error) {
                 console.log(error)
@@ -72,6 +73,16 @@ function showPeople(page) {
         console.log(error)
     })
 
-    // Prev and Next buttons
-    document.querySelector("#next-btn").addEventListener("click",showPeople(2))
+    // Buttons prev and next
+    document.querySelector("#next-btn").addEventListener("click", function() {
+        page += 1
+        showPeople(page)
+    })
+
+    document.querySelector("#prev-btn").addEventListener("click", function() {
+        if (page !== 1) {
+            page -= 1
+            showPeople(page)
+        }
+    })
 }

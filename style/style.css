@@ -10,6 +10,12 @@ body {
 
 /* Classes */
 
+.btn-div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .desc-homepage {
     font-size: 50px;
     color: white;
@@ -53,18 +59,14 @@ body {
     text-align: center;
 }
 
+#page-nb {
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+}
+
 #prev-btn, #next-btn {
     font-size: 30px;
-}
-
-#prev-btn {
-    float: left;
-    display: none;
-}
-
-#next-btn {
-    float: right;
-    display: none;
 }
 
 #wiki-logo {
