@@ -53,6 +53,20 @@ body {
     text-align: center;
 }
 
+#prev-btn, #next-btn {
+    font-size: 30px;
+}
+
+#prev-btn {
+    float: left;
+    display: none;
+}
+
+#next-btn {
+    float: right;
+    display: none;
+}
+
 #wiki-logo {
     width: 75px;
     height: auto;
