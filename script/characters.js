@@ -80,9 +80,11 @@ function showPeople(page) {
     })
 
     document.querySelector("#prev-btn").addEventListener("click", function() {
-        if (page !== 1) {
-            page -= 1
-            showPeople(page)
+        if (page > 1) {
+            showPeople(page - 1)
+        }
+        else {
+            alert("You're on page 1 !")
         }
     })
 }
