@@ -11,22 +11,22 @@ function showMovies() {
             movies.forEach(movie => {
                 // Defining movie poser
                 if (movie.episode_id === 1) {
-                    movie_image = "media/movies_posters/epI_poster.jpg"
+                    movie_image = "https://i.ibb.co/vsbyHfC/ep-I-poster.jpg"
                 }
                 if (movie.episode_id === 2) {
-                    movie_image = "media/movies_posters/epII_poster.jpg"
+                    movie_image = "https://i.ibb.co/ZNM02rc/ep-II-poster.jpg"
                 }
                 if (movie.episode_id === 3) {
-                    movie_image = "media/movies_posters/epIII_poster.jpg"
+                    movie_image = "https://i.ibb.co/hsx4PwW/ep-III-poster.jpg"
                 }
                 if (movie.episode_id === 4) {
-                    movie_image = "media/movies_posters/epIV_poster.jpg"
+                    movie_image = "https://i.ibb.co/TqmKZpx/ep-IV-poster.jpg"
                 }
                 if (movie.episode_id === 5) {
-                    movie_image = "media/movies_posters/epV_poster.jpg"
+                    movie_image = "https://i.ibb.co/jrWV7zn/ep-V-poster.jpg"
                 }
                 if (movie.episode_id === 6) {
-                    movie_image = "media/movies_posters/epVI_poster.jpg"
+                    movie_image = "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
                 }
                 content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
 <img class="card-img-top" src="${movie_image}" alt="Card image cap">
