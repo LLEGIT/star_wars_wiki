@@ -34,6 +34,7 @@ function showPeople(page) {
                 <p class='card-text'>Mass: ${person.mass}</p>
                 <p class='card-text'>Gender: ${person.gender}</p>
                 <p class='card-text'>Birth year: ${person.birth_year}</p>
+                <p id='page-nb' class='card-text' hidden>${page}</p>
                 </div></div></div>`
             })
             .catch(function (error) {
@@ -141,7 +142,12 @@ function showPeople(page) {
 
     // Buttons prev and next
     document.querySelector("#next-btn").addEventListener("click", function() {
-        showPeople(page + 1)
+        if (page < 9) {
+            showPeople(page + 1)
+        }
+        else {
+            alert("You're on last page !")
+        }
     })
 
     document.querySelector("#prev-btn").addEventListener("click", function() {
