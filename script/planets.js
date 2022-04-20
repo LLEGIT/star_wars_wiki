@@ -14,7 +14,7 @@ function showPlanets(page) {
         let planets = data.results
         planets.forEach(planet => {
                 content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
-                <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+                <img class="card-img-top" src="https://icon-library.com/images/planet-icon-png/planet-icon-png-21.jpg" alt="Card image cap">
                 <div class='card-body'>
                 <h5 class='card-title'>${planet.name}</h5>
                 <p class='card-text'>Climate: ${planet.climate}</p>
