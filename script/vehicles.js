@@ -13,8 +13,9 @@ function showVehicles(page) {
     .then(function (data) {
         let vehicles = data.results
         vehicles.forEach(vehicles => {
+            vehicle_img = "https://cdn0.iconfinder.com/data/icons/star-wars/33/at-at-512.png"
                 content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
-                <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+                <img class="card-img-top" src="${vehicle_img}" alt="Card image cap">
                 <div class='card-body'>
                 <h5 class='card-title'>${vehicles.name}</h5>
                 <p class='card-text'>Model: ${vehicles.model}</p>
