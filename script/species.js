@@ -14,7 +14,7 @@ function showSpecies(page) {
         let species = data.results
         species.forEach(specy => {
                 content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
-                <img class="card-img-top" src="https://via.placeholder.com/300" alt="Card image cap">
+                <img class="card-img-top" src="https://e7.pngegg.com/pngimages/218/926/png-clipart-stick-man-stick-figure-happy-stick-man-photography-smiley-thumbnail.png" alt="Card image cap">
                 <div class='card-body'>
                 <h5 class='card-title'>${specy.name}</h5>
                 <p class='card-text'>Classification: ${specy.classification}</p>
