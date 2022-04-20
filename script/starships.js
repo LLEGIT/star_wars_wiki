@@ -31,25 +31,25 @@ function showStarships(page) {
     .catch(function (error) {
         console.log(error)
     })
-
-    // Buttons prev and next
-    document.querySelector("#next-btn").addEventListener("click", function() {
-        if (page < 4) {
-            page += 1
-            showStarships(page)
-        }
-        else {
-            alert("You've reached last page")
-        }
-    })
-
-    document.querySelector("#prev-btn").addEventListener("click", function() {
-        if (page > 1) {
-            page -= 1
-            showStarships(page)
-        }
-        else {
-            alert("You're on page 1 !")
-        }
-    })
 }
+
+ // Buttons prev and next
+ document.querySelector("#next-btn").addEventListener("click", function() {
+    if (page < 4) {
+        page += 1
+        showStarships(page)
+    }
+    else {
+        alert("You've reached last page")
+    }
+})
+
+document.querySelector("#prev-btn").addEventListener("click", function() {
+    if (page > 1) {
+        page -= 1
+        showStarships(page)
+    }
+    else {
+        alert("You're on page 1 !")
+    }
+})
