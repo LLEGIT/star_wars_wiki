@@ -24,8 +24,9 @@ async function showPeople(page) {
                             person.mass += " kg"
                         }
                         homeworld = planet.name
-                        content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
-<img class="card-img-top" src="${person_image}" alt="Card image cap">
+                        content_container.innerHTML += `<div class='card'>
+                        <div class='col-lg-3 col-sm-3'><img class="card-img-top" src="${person_image}" alt="Card image cap"></div>
+                        <div class='col-lg-9 col-sm-9'>
 <div class='card-body'>
 <h5 class='card-title'>${person.name}</h5>
 <p class='card-text'>Homeworld: ${homeworld}</p>
@@ -97,8 +98,8 @@ function defineIcon(name, page) {
         else if (name === "Greedo") {
             person_image = "https://www.starwars-holonet.com/holonet/images/3/39/386/perso_greedo_2.jpg"
         }
-        else if (name === "Han solo") {
-            person_image = "https://static.wikia.nocookie.net/frstarwars/images/4/48/Han_Solo.jpg/revision/latest?cb=20160514115511"
+        else if (name === "Han Solo") {
+            person_image = "https://static.wikia.nocookie.net/frstarwars/images/6/64/HanSolo_TFA.png/revision/latest/scale-to-width-down/350?cb=20160111071248"
         }
         else if (name === "Jek Tono Porkins") {
             person_image = "https://static.wikia.nocookie.net/frstarwars/images/e/eb/JekPorkins-DB.png"
@@ -115,10 +116,7 @@ function defineIcon(name, page) {
     }
     // Page 3
     else if (page === 3) {
-        if (name === "Han Solo") {
-            person_image = "https://static.wikia.nocookie.net/frstarwars/images/6/64/HanSolo_TFA.png/revision/latest?cb=20160111071248"
-        }
-        else if (name === "Boba Fett") {
+        if (name === "Boba Fett") {
             person_image = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Boba_Fett_-_A_Fett_to_Remember.jpg/800px-Boba_Fett_-_A_Fett_to_Remember.jpg"
         }
         else if (name === "IG-88") {

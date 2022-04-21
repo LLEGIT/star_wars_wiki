@@ -14,8 +14,8 @@ function showSpecies(page) {
             let species = data.results
             species.forEach(specy => {
                 specy_img = defineIcon(specy.name, page)
-                content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
-<img class="card-img-top" src="${specy_img}" alt="Card image cap">
+                content_container.innerHTML += `<div class='card'><div class='col-lg-4 col-sm-4'>
+<img class="card-img-top" src="${specy_img}" alt="Card image cap"></div><div class='col-lg-8 col-sm-8'>
 <div class='card-body'>
 <h5 class='card-title'>${specy.name}</h5>
 <p class='card-text'>Classification: ${specy.classification}</p>

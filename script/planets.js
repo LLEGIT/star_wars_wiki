@@ -15,9 +15,9 @@ function showPlanets(page) {
         planets.forEach(planet => {
             if (planet.name !== "unknown") {
                 planet_img = defineIcon(planet.name, page)
-                content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
+                content_container.innerHTML += `<div class='card'><div class='col-lg-3 col-sm-3'>
                 <img class="card-img-top" src="${planet_img}" alt="Card image cap">
-                <div class='card-body'>
+                </div><div class = 'col-lg-9 col-sm-9'><div class='card-body'>
                 <h5 class='card-title'>${planet.name}</h5>
                 <p class='card-text'>Climate: ${planet.climate}</p>
                 <p class='card-text'>Terrain: ${planet.terrain}</p>

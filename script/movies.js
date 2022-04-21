@@ -28,8 +28,11 @@ function showMovies() {
                 if (movie.episode_id === 6) {
                     movie_image = "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
                 }
-                content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
+                content_container.innerHTML += `<div class='card'>
+                <div class='col-lg-3 col-sm-3 col-xs-6'>
 <img class="card-img-top" src="${movie_image}" alt="Card image cap">
+                </div>
+                <div class = 'col-lg-9 col-sm-9 col-xs-6'>
 <div class='card-body'>
 <h5 class='card-title'>${movie.title}</h5>
 <p class='card-text'>${movie.opening_crawl}</p>

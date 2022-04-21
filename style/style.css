@@ -1,13 +1,7 @@
-@font-face {
-    font-family: "Starjedi";
-    src: url("Starjedi.ttf");
-}
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Starjedi", "Ubuntu";
 }
 
 body {
@@ -38,38 +32,26 @@ body {
 
 @media (min-width: 800px) {
     .card {
-        display: flex;
+        margin: 10px;
         flex-direction: row;
-        justify-content: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
-    .card img {
-        width: 400px;
+    .card-img-top {
+        width: 100%;
         height: auto;
     }
 }
 
 @media (max-width: 800px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 20px;
-    }
-    .card img {
+    .card-img-top {
         width: 100%;
         height: auto;
     }
 }
 
 .card h5 {
-    font-size: 35px;
-}
-
-.card p {
-    font-size: 20px;
+    font-size: 30px;
+    font-style: italic;
 }
 
 /* IDs */
