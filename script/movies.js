@@ -23,7 +23,7 @@ function showMovies() {
                     movie_image = "https://i.ibb.co/TqmKZpx/ep-IV-poster.jpg"
                 }
                 if (movie.episode_id === 5) {
-                    movie_image = "https://static.wikia.nocookie.net/frstarwars/images/2/2e/Vendredi.jpg/revision/latest?cb=20151011152917"
+                    movie_image = "https://static.wikia.nocookie.net/starwars/images/e/e4/Empire_strikes_back_old.jpg/revision/latest/scale-to-width-down/499?cb=20161114072554"
                 }
                 if (movie.episode_id === 6) {
                     movie_image = "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
