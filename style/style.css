@@ -1,7 +1,13 @@
+@font-face {
+    font-family: "Starjedi";
+    src: url("Starjedi.ttf");
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Starjedi", "Ubuntu";
 }
 
 body {
@@ -30,17 +36,32 @@ body {
     align-items: center;
 }
 
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+@media (min-width: 800px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        width: 400px;
+        height: auto;
+    }
 }
 
-.card img {
-    width: 300px;
-    height: auto;
+@media (max-width: 800px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .card h5 {
