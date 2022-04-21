@@ -13,7 +13,7 @@ function showStarships(page) {
     .then(function (data) {
         let starships = data.results
         starships.forEach(starship => {
-            starship_img = "https://www.pngkit.com/png/detail/162-1626906_star-wars-icons-star-wars-rpg-star-wars.png"
+            starship_img = defineIcon(starship.name, page)
                 content_container.innerHTML += `<div class='col-lg-12 col-sm-12'><div class='card'>
                 <img class="card-img-top" src="${starship_img}" alt="Card image cap">
                 <div class='card-body'>
