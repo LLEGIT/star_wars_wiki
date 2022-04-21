@@ -67,6 +67,96 @@ function defineIcon(name, page) {
             specy_img = "https://static.wikia.nocookie.net/starwars/images/f/f5/Sullustan_NEGAS.jpg/revision/latest?cb=20100810063353"
         }
     }
+    // Page 2
+    if (page === 2) {
+        if (name === "Neimodian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/b/b0/NeimoidiansSWE.png/revision/latest/scale-to-width-down/392?cb=20140909101500"
+        }
+        else if (name === "Gungan") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/d/d5/Gungan_warrior.png/revision/latest/scale-to-width-down/500?cb=20160911012903"
+        }
+        else if (name === "Toydarian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/6/6e/Wattoep2promotionalfull.jpg/revision/latest/scale-to-width-down/499?cb=20081222024850"
+        }
+        else if (name === "Dug") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/2/2c/Dug_full_body.png/revision/latest/scale-to-width-down/350?cb=20140728150031"
+        }
+        else if (name === "Twi'lek") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/9/95/TwilekNEGAS.png/revision/latest/scale-to-width-down/500?cb=20150523023715"
+        }
+        else if (name === "Aleena") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/e/e3/Ratts.jpg/revision/latest/scale-to-width-down/153?cb=20080508150745"
+        }
+        else if (name === "Vulptereen") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/c/cd/Dud_Bolt_FF_Scan.png/revision/latest/scale-to-width-down/312?cb=20150414170315"
+        }
+        else if (name === "Xexto") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/3/30/Gasgano.jpg/revision/latest/scale-to-width-down/241?cb=20150331133737"
+        }
+        else if (name === "Toong") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/1/18/BenQuadinarosFull-SWE.png/revision/latest/scale-to-width-down/249?cb=20160910192602"
+        }
+        else if (name === "Cerean") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/b/be/Mundi_bodyshot.png/revision/latest/scale-to-width-down/280?cb=20140603153008"
+        }
+    }
+    // Page 3
+    if (page === 3) {
+        if (name === "Nautolan") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/8/81/Kitfisto_detail.png/revision/latest/scale-to-width-down/298?cb=20170608230157"
+        }
+        else if (name === "Zabrak") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/a/a4/Zabrak_DICE.png/revision/latest/scale-to-width-down/500?cb=20151106031307"
+        }
+        else if (name === "Tholothian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/6/66/Tholothian-UP.png/revision/latest/scale-to-width-down/236?cb=20190415010812"
+        }
+        else if (name === "Iktotchi") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/f/f4/SaeseeTiinFull-SWE.png/revision/latest/scale-to-width-down/297?cb=20160913232333"
+        }
+        else if (name === "Quermian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/4/4f/Yarael_Poof_USW.png/revision/latest/scale-to-width-down/500?cb=20160701061715"
+        }
+        else if (name === "Kel Dor") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/f/fd/Plokoon_detail.png/revision/latest/scale-to-width-down/273?cb=20111116042533"
+        }
+        else if (name === "Chagrian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/5/5e/ChagrianNEGAS.jpg/revision/latest/scale-to-width-down/499?cb=20061201134120"
+        }
+        else if (name === "Geonosian") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/a/a0/Geonosian_NEGAS.png/revision/latest/scale-to-width-down/500?cb=20170226060952"
+        }
+        else if (name === "Mirialan") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/e/e1/Luminara_TCW.jpg/revision/latest/scale-to-width-down/326?cb=20090310213227"
+        }
+        else if (name === "Clawdite") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/3/37/ClawditeNEGAS.jpg/revision/latest/scale-to-width-down/500?cb=20090709061818"
+        }
+    }
+    // Page 4
+    if (page === 4) {
+        if (name === "Besalisk") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/1/1b/BesaliskNEGAS.jpg/revision/latest/scale-to-width-down/499?cb=20130908201429"
+        }
+        else if (name === "Kaminoan") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/0/03/KaminoanNEGAS.jpg/revision/latest/scale-to-width-down/499?cb=20090709062442"
+        }
+        else if (name === "Skakoan") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/a/a0/Skakoan2.jpg/revision/latest/scale-to-width-down/500?cb=20091012195839"
+        }
+        else if (name === "Muun") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/f/f4/SaeseeTiinFull-SWE.png/revision/latest/scale-to-width-down/297?cb=20160913232333"
+        }
+        else if (name === "Togruta") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/b/b2/Togruta_NEGAS.jpg/revision/latest/scale-to-width-down/500?cb=20100810070146"
+        }
+        else if (name === "Kaleesh") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/d/d0/Kaleesh-Alien_Archive.jpg/revision/latest/scale-to-width-down/500?cb=20181011072919"
+        }
+        else if (name === "Pau'an") {
+            specy_img = "https://static.wikia.nocookie.net/starwars/images/2/22/Pau%27an.jpg/revision/latest/scale-to-width-down/499?cb=20070705042952"
+        }
+    }
     return specy_img
 }
 
