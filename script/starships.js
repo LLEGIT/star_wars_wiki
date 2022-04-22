@@ -171,7 +171,7 @@ function defineIcon(name, page) {
     // Page 4
     else if (page === 4) {
         if (name === "Naboo star skiff") {
-            starship_img = "https://static.wikia.nocookie.net/starwars/images/1/12/Sithhttps://static.wikia.nocookie.net/starwars/images/d/df/Naboo_star_skiff_1.png/revision/latest/scale-to-width-down/500?cb=20130212042348"
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/0/08/Nabooskiff2-chron.jpg/revision/latest/scale-to-width-down/350?cb=20070922232853"
         }
         else if (name === "Jedi Interceptor") {
             starship_img = "https://static.wikia.nocookie.net/starwars/images/a/a6/Eta-2_Interceptor.png/revision/latest/scale-to-width-down/350?cb=20130613124413"
@@ -179,7 +179,7 @@ function defineIcon(name, page) {
         else if (name === "arc-170") {
             starship_img = "https://static.wikia.nocookie.net/starwars/images/b/ba/ARC170starfighter.jpg/revision/latest/scale-to-width-down/500?cb=20111112062600"
         }
-        else if (name === "Banking clan frigate") {
+        else if (name === "Banking clan frigte") {
             starship_img = "https://static.wikia.nocookie.net/starwars/images/0/07/Munificent_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311013715"
         }
         else if (name === "Belbullab-22 starfighter") {
