@@ -68,7 +68,127 @@ function defineIcon(name, page) {
         else if (name === "Rebel transport") {
             starship_img = "https://static.wikia.nocookie.net/frstarwars/images/2/2e/AllianceTransport.png/revision/latest/scale-to-width-down/350?cb=20210702062826"
         }
+    }
+    // Page 2
+    else if (page === 2) {
+        if (name === "Slave 1") {
+            starship_img = "https://www.starwars-universe.com/images/encyclopedie/vaisseaux_vehicules/avatars_v6/slave_avv6.jpg"
         }
+        else if (name === "Imperial shuttle") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/d/d3/ImperialShuttle-DB.png/revision/latest?cb=20150920051331"
+        }
+        else if (name === "EF76 Nebulon-B escort frigate") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/7/71/NebulonB-SWS.png/revision/latest/scale-to-width-down/500?cb=20210303023412"
+        }
+        else if (name === "Calamari Cruiser") {
+            starship_img = "https://static.turbosquid.com/Preview/2020/09/12__05_01_46/moncalcruiser.jpgC4F94E83-2287-4E23-BB30-322C7E885F99Large.jpg"
+        }
+        else if (name === "A-wing") {
+            starship_img = "https://static.wikia.nocookie.net/frstarwars/images/2/23/A-Wing.jpg/revision/latest?cb=20161103093004"
+        }
+        else if (name === "B-wing") {
+            starship_img = "https://static.wikia.nocookie.net/frstarwars/images/7/71/BWingsKillISD2-ST.jpg/revision/latest?cb=20160604124644"
+        }
+        else if (name === "Republic Cruiser") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/d/dd/Republic_Frigate.png/revision/latest/scale-to-width-down/225?cb=20140409150934"
+        }
+        else if (name === "Droid control ship") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/9/95/Lucrehulk_battleship_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311015214"
+        }
+        else if (name === "Naboo fighter") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/6/64/N-1_Starfighter.png/revision/latest/scale-to-width-down/500?cb=20130619201428"
+        }
+        else if (name === "Naboo Royal Starship") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/9/9e/Naboo_Royal_Starship.png/revision/latest/scale-to-width-down/500?cb=20161019065403"
+        }
+    }
+    // Page 2
+    else if (page === 2) {
+        if (name === "Slave 1") {
+            starship_img = "https://www.starwars-universe.com/images/encyclopedie/vaisseaux_vehicules/avatars_v6/slave_avv6.jpg"
+        }
+        else if (name === "Imperial shuttle") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/d/d3/ImperialShuttle-DB.png/revision/latest?cb=20150920051331"
+        }
+        else if (name === "EF76 Nebulon-B escort frigate") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/7/71/NebulonB-SWS.png/revision/latest/scale-to-width-down/500?cb=20210303023412"
+        }
+        else if (name === "Calamari Cruiser") {
+            starship_img = "https://static.turbosquid.com/Preview/2020/09/12__05_01_46/moncalcruiser.jpgC4F94E83-2287-4E23-BB30-322C7E885F99Large.jpg"
+        }
+        else if (name === "A-wing") {
+            starship_img = "https://static.wikia.nocookie.net/frstarwars/images/2/23/A-Wing.jpg/revision/latest?cb=20161103093004"
+        }
+        else if (name === "B-wing") {
+            starship_img = "https://static.wikia.nocookie.net/frstarwars/images/7/71/BWingsKillISD2-ST.jpg/revision/latest?cb=20160604124644"
+        }
+        else if (name === "Republic Cruiser") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/d/dd/Republic_Frigate.png/revision/latest/scale-to-width-down/225?cb=20140409150934"
+        }
+        else if (name === "Droid control ship") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/9/95/Lucrehulk_battleship_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311015214"
+        }
+        else if (name === "Naboo fighter") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/6/64/N-1_Starfighter.png/revision/latest/scale-to-width-down/500?cb=20130619201428"
+        }
+        else if (name === "Naboo Royal Starship") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/9/9e/Naboo_Royal_Starship.png/revision/latest/scale-to-width-down/500?cb=20161019065403"
+        }
+    }
+    // Page 3
+    else if (page === 3) {
+        if (name === "Scimitar") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/1/12/Sithinfiltrator-NEGVV.png/revision/latest/scale-to-width-down/500?cb=20170411032807"
+        }
+        else if (name === "J-type diplomatic barge") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/1/1c/J-type_Diplomatic_Barge_TCW.png/revision/latest/scale-to-width-down/500?cb=20160903222638"
+        }
+        else if (name === "AA-9 Coruscant freighter") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/c/c7/Aa9coruscantfreighter.jpg/revision/latest/scale-to-width-down/500?cb=20091201131352"
+        }
+        else if (name === "Jedi starfighter") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/7/7a/Jsf_duo2.jpg/revision/latest/scale-to-width-down/150?cb=20060706121723"
+        }
+        else if (name === "H-type Nubian yacht") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/8/87/H-Type_Nubian_yacht_USW.png/revision/latest/scale-to-width-down/500?cb=20190116010226"
+        }
+        else if (name === "Republic Assault ship") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/8/84/Acclamator-OCF.jpg/revision/latest/scale-to-width-down/500?cb=20091003023542"
+        }
+        else if (name === "Solar Sailer") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/d/dd/Republic_Frigate.png/revision/latest/scale-to-width-down/225?cb=20140409150934"
+        }
+        else if (name === "Trade Federation cruiser") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/9/95/Lucrehulk_battleship_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311015214"
+        }
+        else if (name === "Theta-class T-2c shuttle") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/4/41/Solar_sail.jpg/revision/latest/scale-to-width-down/250?cb=20090623121923"
+        }
+        else if (name === "Republic attack cruiser") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/e/ec/Venator_clonewars.jpg/revision/latest/scale-to-width-down/500?cb=20110918171254"
+        }
+    }
+    // Page 4
+    else if (page === 4) {
+        if (name === "Naboo star skiff") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/1/12/Sithhttps://static.wikia.nocookie.net/starwars/images/d/df/Naboo_star_skiff_1.png/revision/latest/scale-to-width-down/500?cb=20130212042348"
+        }
+        else if (name === "Jedi Interceptor") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/a/a6/Eta-2_Interceptor.png/revision/latest/scale-to-width-down/350?cb=20130613124413"
+        }
+        else if (name === "arc-170") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/b/ba/ARC170starfighter.jpg/revision/latest/scale-to-width-down/500?cb=20111112062600"
+        }
+        else if (name === "Banking clan frigate") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/0/07/Munificent_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311013715"
+        }
+        else if (name === "Belbullab-22 starfighter") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/3/3e/Soulless_One2_TCW.jpg/revision/latest/scale-to-width-down/500?cb=20090311020627"
+        }
+        else if (name === "V-wing") {
+            starship_img = "https://static.wikia.nocookie.net/starwars/images/6/66/Nimbus-class_V-wing_TFOWM.png/revision/latest/scale-to-width-down/250?cb=20190629212809"
+        }
+    }
     return starship_img
 }
 
