@@ -17,6 +17,7 @@ async function showPeople(page) {
         .then(function (data) {
             let people = data.results;
             content_container.innerHTML = "";
+            
             people.forEach(person => {
                 fetch(person.homeworld)
                     .then((resp) => resp.json())
@@ -53,7 +54,7 @@ async function showPeople(page) {
                     .catch(function (error) {
                         console.log(error);
                     })
-            })
+            });
         })
         .catch(function (error) {
             console.log(error);
@@ -177,7 +178,7 @@ document.querySelector("#next-btn").addEventListener("click", function () {
     else {
         alert("You're on last page !");
     }
-})
+});
 
 document.querySelector("#prev-btn").addEventListener("click", function () {
     if (page > 1) {
@@ -188,4 +189,4 @@ document.querySelector("#prev-btn").addEventListener("click", function () {
     else {
         alert("You're on page 1 !");
     }
-})
+});

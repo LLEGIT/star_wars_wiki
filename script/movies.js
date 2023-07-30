@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", showMovies())
+document.addEventListener("DOMContentLoaded", showMovies());
 
 function showMovies() {
     let content_container = document.querySelector(".content-container");
@@ -20,8 +20,8 @@ function showMovies() {
         .then(function (data) {
             // Empty the view
             content_container.innerHTML = "";
-            let movies = data.results
-            let movie_image = ""
+            let movies = data.results;
+            let movie_image = "";
             movies.forEach((movie, index) => {
                 // Defining movie poser
                 movie_image = moviesPoster[index];
@@ -44,6 +44,6 @@ function showMovies() {
             })
         })
         .catch(function (error) {
-            console.log(error)
+            console.log(error);
         });
 }
