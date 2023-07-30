@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", showMovies());
 
 function showMovies() {
     let content_container = document.querySelector(".content-container");
-    let moviesPoster = [
-        "https://i.ibb.co/vsbyHfC/ep-I-poster.jpg",
-        "https://i.ibb.co/ZNM02rc/ep-II-poster.jpg",
-        "https://i.ibb.co/hsx4PwW/ep-III-poster.jpg",
-        "https://i.ibb.co/TqmKZpx/ep-IV-poster.jpg",
-        "https://static.wikia.nocookie.net/starwars/images/e/e4/Empire_strikes_back_old.jpg/revision/latest/scale-to-width-down/499?cb=20161114072554",
-        "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
-    ];
+    let moviesPoster = {
+        1: "https://i.ibb.co/vsbyHfC/ep-I-poster.jpg",
+        2: "https://i.ibb.co/ZNM02rc/ep-II-poster.jpg",
+        3: "https://i.ibb.co/hsx4PwW/ep-III-poster.jpg",
+        4: "https://i.ibb.co/TqmKZpx/ep-IV-poster.jpg",
+        5: "https://static.wikia.nocookie.net/starwars/images/e/e4/Empire_strikes_back_old.jpg/revision/latest/scale-to-width-down/499?cb=20161114072554",
+        6: "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
+    };
 
     // while not fetched
     content_container.innerHTML = "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>";
@@ -22,9 +22,9 @@ function showMovies() {
             content_container.innerHTML = "";
             let movies = data.results;
             let movie_image = "";
-            movies.forEach((movie, index) => {
+            movies.forEach(movie => {
                 // Defining movie poser
-                movie_image = moviesPoster[index];
+                movie_image = moviesPoster[movie.episode_id];
 
                 content_container.innerHTML += 
                 `<div class='card'>
