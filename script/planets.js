@@ -6,7 +6,7 @@ function showPlanets(page) {
     page_nb.textContent = `Page ${page}`;
     let content_container = document.querySelector(".content-container");
 
-    // While movies not fetched
+    // while not fetched
     content_container.innerHTML = "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>";
 
     // Fetching every characters

@@ -11,7 +11,7 @@ function showMovies() {
         "https://i.ibb.co/6byn7R9/ep-VI-poster.jpg"
     ];
 
-    // While movies not fetched
+    // while not fetched
     content_container.innerHTML = "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>";
 
     // Getting films JSON

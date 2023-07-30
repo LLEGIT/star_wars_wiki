@@ -8,15 +8,15 @@ async function showPeople(page) {
     let content_container = document.querySelector(".content-container");
 
     
-    // While movies not fetched
+    // while not fetched
     content_container.innerHTML = "<div class='lds-roller'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>";
     
     // Fetching every characters
     fetch(`https://swapi.dev/api/people/?page=${page}`)
         .then((resp) => resp.json())
         .then(function (data) {
-            let people = data.results;
             content_container.innerHTML = "";
+            let people = data.results;
             
             people.forEach(person => {
                 fetch(person.homeworld)
