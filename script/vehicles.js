@@ -20,10 +20,10 @@ function showVehicles(page) {
             vehicle_img = defineIcon(vehicle.name, page);
             content_container.innerHTML += 
             `<div class='card'>
-                <div>
+                <div class = 'col-lg-6 col-sm-6'>
                     <img class="card-img-top" src="${vehicle_img}" alt="Card image cap">
                 </div>
-                <div'>
+                <div class='col-lg-6 col-sm-6'>
                     <div class='card-body'>
                         <h5 class='card-title'>${vehicle.name}</h5>
                         <p class='card-text'>Model: ${vehicle.model}</p>
